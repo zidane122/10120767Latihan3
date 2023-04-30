@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Tanggal pengerjaan : 29/04/2023
+    NIM     : 10120767
+    Nama    : Zidane Maulana
+    Kelas   : IF-9
+    -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="60dp"
+            android:text="Kode Keluarga"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:fontFamily="@font/nunito_bold"/>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_below="@id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:text="Ketikkan kode keluarga yang Ayah dan Bunda miliki"
+            android:textColor="#202020"
+            android:textSize="20sp"
+            android:fontFamily="@font/nunito_bold"/>
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/roundedcorner"
+            android:fontFamily="@font/nunito_bold"
+            android:text="A1B2C3"
+            android:textAlignment="center"
+            android:textColor="#202020"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt3"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Dengan menekan tombol masuk berarti Anda menyetujui"
+            android:textColor="#202020"
+            android:textSize="11sp" />
+
+
+        <LinearLayout
+            android:id="@+id/txt5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/txt4"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ketentuan Pengguna"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                android:fontFamily="@font/nunito_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dan"
+                android:textSize="11sp"
+                android:layout_marginLeft="3dp"
+                android:textColor="#202020"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kebijakan Data"
+                android:layout_marginLeft="3dp"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                android:fontFamily="@font/nunito_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kami"
+                android:textSize="11sp"
+                android:layout_marginLeft="3dp"
+                android:textColor="#202020"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnmsk"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/roundedcorner"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Masuk"
+            android:textColor="#202020"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:layout_below="@id/btnmsk">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Belum punya kode keluarga?"
+                android:gravity="center_horizontal"
+                android:textColor="#bababb"
+                android:layout_marginTop="30dp"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:backgroundTint="@color/purple_200"
+                android:fontFamily="@font/nunito_bold"
+                android:text="beli kode keluarga disini"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

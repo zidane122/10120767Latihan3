@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Tanggal pengerjaan : 29/04/2023
+    NIM     : 10120767
+    Nama    : Zidane Maulana
+    Kelas   : IF-9
+    -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BiodataActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt1_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="80dp"
+            android:text="Nama Panggilan Kamu"
+            android:textColor="#000000"
+            android:textSize="27sp"
+            android:fontFamily="@font/nunito_bold"/>
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt1_b"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Contoh : Zidane"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint ="#a7a7a7"/>
+
+        <TextView
+            android:id="@+id/txt2_b"
+            android:layout_below="@id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:text="Umur Kamu"
+            android:textColor="#000000"
+            android:textSize="27sp"
+            android:fontFamily="@font/nunito_bold"/>
+
+        <EditText
+            android:id="@+id/umur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt2_b"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Contoh : 22"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint ="#a7a7a7"/>
+
+        <Button
+            android:id="@+id/btn_bio"
+            android:layout_below="@id/umur"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedcorner"
+            android:layout_centerHorizontal="true"
+            android:text="Selanjutnya"
+            android:textColor="#202020"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="80dp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
